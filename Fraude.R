@@ -142,11 +142,6 @@ prop.table(table(rose_teste$is_attributed))
 
 #O resultado foi quase 50% de dados para cada categoria.
 
-#Removendo a coluna que contém a variável target dos dados de teste
-
-#rose_teste<- rose_teste[ ,1:5]
-#View(rose_teste)
-
 #Criando a primeira versão do modelo com o algoritmo C50 (árvore de decisão)
 
 modelo1 <- C5.0(is_attributed ~ ., data = rose_treino)
